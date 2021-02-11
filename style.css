@@ -27,3 +27,8 @@ a {
   justify-content: center;
   align-items: center;
 }
+form label.required:after
+{
+    color: red;
+    content: " *";
+}
