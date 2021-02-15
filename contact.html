@@ -254,21 +254,30 @@
     <div id="navigation-bar"></div>
     <h1>Contact</h1>
     <form>
-      <label for="first-name" class="required">First Name:</label>
-      <input type="text" id="first-name" name="first-name" placeholder="John" required><br>
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="first-name" class="required">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="John" required><br>
+        <label for="last-name" class="required">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Doe" required><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="country">Country:</label>
+        <input id="country" name="country" list="countries"><br>
+      </fieldset>
 
-      <label for="last-name" class="required">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" placeholder="Doe" required><br><br>
+      <br>
 
-      <label for="e-mail" class="required">E-mail:</label>
-      <input type="text" id="e-mail" name="e-mail" placeholder="johndoe@example.com" required><br>
+      <fieldset>
+        <legend>Contacts:</legend>
+        <label for="e-mail" class="required">E-mail:</label>
+        <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" id="e-mail" name="e-mail" placeholder="johndoe@example.com" required><br>
+        <!-- TODO: Verify the phone number before allowing submission. -->
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" placeholder="+31616238992"><br>
+      </fieldset>
 
-      <label for="country" class="required">Country:</label>
-      <input id="country" name="country" list="countries" required><br>
-
-      <!-- TODO: Verify the phone number before allowing submission. -->
-      <label for="phone-number">Phone Number:</label>
-      <input type="tel" id="phone-number" name="phone-number" placeholder="+31616238992"><br><br>
+      <br>
 
       <label for="message" class="required">Message:</label><br>
       <textarea id="message" name="message" cols="40" rows="5" required></textarea><br><br>
