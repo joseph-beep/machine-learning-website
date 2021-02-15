@@ -271,10 +271,11 @@
       <fieldset>
         <legend>Contacts:</legend>
         <label for="e-mail" class="required">E-mail:</label>
-        <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" id="e-mail" name="e-mail" placeholder="johndoe@example.com" required><br>
+        <!-- SOURCE_PATTERN: https://www.regular-expressions.info/email.html -->
+        <input pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\x22(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\x22)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" id="e-mail" name="e-mail" placeholder="johndoe@example.com" required><br>
         <!-- TODO: Verify the phone number before allowing submission. -->
         <label for="phone-number">Phone Number:</label>
-        <input type="tel" id="phone-number" name="phone-number" placeholder="+31616238992"><br>
+        <input pattern="(([+][(]?[0-9]{1,3}[)]?)|([(]?[0-9]{4}[)]?))\s*[)]?[-\s\.]?[(]?[0-9]{1,3}[)]?([-\s\.]?[0-9]{3})([-\s\.]?[0-9]{3,4})" type="tel" id="phone-number" name="phone-number" placeholder="+31612345678"><br>
       </fieldset>
 
       <br>
