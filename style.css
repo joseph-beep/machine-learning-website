@@ -47,10 +47,6 @@ a {
   width: 50%;
   float: left;
 }
-.left button
-{
-  justify-content: right;
-}
 
 form label.required:after
 {
