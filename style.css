@@ -1,15 +1,19 @@
 body
 {
   font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
 }
+
 h1
 {
   text-align: center;
 }
+
 nav
 {
   text-align: center;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -17,6 +21,7 @@ a {
   padding-left: 5vw;
   padding-right: 5vw;
 }
+
 .full-screen
 {
   height: 100vh;
@@ -27,6 +32,24 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.left
+{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+  color: black;
+  margin: 10vw;
+  height: 100vh;
+}
+.left .text
+{
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
 form label.required:after
 {
     color: red;

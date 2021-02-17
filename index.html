@@ -5,26 +5,52 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="slideshow.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="navigation-bar"></div>
-    <div class="full-screen" style="--background: url('https://miro.medium.com/max/3840/1*_o9Z6bf_hnHlHcuEz5RUoA.jpeg')">
-      <h1>Home</h1>
+    <div class="slideshow-container">
+      <div class="slide fade full-screen" style="--background: url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iEvgCaMpO5ns/v0/1000x-1.jpg')">
+        <h1>Titel 1</h1>
+        <p>Nu één van de snelst-groeiende markten ter wereld, het is de technologie waarop bijna heel de toekomst op zal rusten. Het staat zelf op het idee dat een programma zelf kan “leren”, en er zijn eindeloos veel toepassingen.</p>
+      </div>
+      <div class="slide fade full-screen" style="--background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-WJWI0zej6qAk0sSTvv_GsVtZIqvx4gk1A&usqp=CAU')">
+        <h1>Titel 2</h1>
+        <p>Ingenieurs in Tesla werken aan zelfrijdende auto’s met machine learning.
+        Programmeurs in Apple werken aan gezichtsherkenning technologie met machine learning.
+        Zelfs aandelen worden verhandeld door bots getraind met machine learning.</p>
+      </div>
+      <div class="slide fade full-screen" style="--background: url('https://q-xx.bstatic.com/xdata/images/hotel/840x460/210768979.jpg?k=8c5a446976bf74a068d77c5e1dcf37158b9625883dd99ff46175fa6d263836e2&o=')">
+        <h1>Titel 3</h1>
+        <p>Machine learning is de wetenschap van computer algoritmes die beter worden door middel van ervaring.
+        Er zijn talloze machine learning algoritmes die allemaal voor bepaalde toepassingen worden gebruikt, van soorten die een programma een omgeving beter leert kennen tot soorten die data probeert te begrijpen en daarmee toekomstige gebeurtenissen voorspellen.</p>
+      </div>
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="full-screen" style="--background: url ('https://media.istockphoto.com/vectors/cute-white-robot-character-vector-vector-id1187576166?k=6&m=1187576166&s=612x612&w=0&h=gTX8u5cr_hc9YcjfoGBfTUesIJAi2yNV_NDuErZwj3Y=')">
-      <h1>Wat is machine learning?</h1>
-      <p>Nu één van de snelst-groeiende markten ter wereld, het is de technologie waarop bijna heel de toekomst op zal rusten. Het staat zelf op het idee dat een programma zelf kan “leren”, en er zijn eindeloos veel toepassingen.
+    <div class="full-screen left" style="--background: url ('https://media.istockphoto.com/vectors/cute-white-robot-character-vector-vector-id1187576166?k=6&m=1187576166&s=612x612&w=0&h=gTX8u5cr_hc9YcjfoGBfTUesIJAi2yNV_NDuErZwj3Y=')">
+      <div class="text">
+        <h1>Wat is machine learning?</h1>
+        <p>Nu één van de snelst-groeiende markten ter wereld, het is de technologie waarop bijna heel de toekomst op zal rusten. Het staat zelf op het idee dat een programma zelf kan “leren”, en er zijn eindeloos veel toepassingen.
 
-      Ingenieurs in Tesla werken aan zelfrijdende auto’s met machine learning.
-      Programmeurs in Apple werken aan gezichtsherkenning technologie met machine learning.
-      Zelfs aandelen worden verhandeld door bots getraind met machine learning.
+        Ingenieurs in Tesla werken aan zelfrijdende auto’s met machine learning.
+        Programmeurs in Apple werken aan gezichtsherkenning technologie met machine learning.
+        Zelfs aandelen worden verhandeld door bots getraind met machine learning.
 
-      Machine learning is de wetenschap van computer algoritmes die beter worden door middel van ervaring.
-      Er zijn talloze machine learning algoritmes die allemaal voor bepaalde toepassingen worden gebruikt, van soorten die een programma een omgeving beter leert kennen tot soorten die data probeert te begrijpen en daarmee toekomstige gebeurtenissen voorspellen.</p>
+        Machine learning is de wetenschap van computer algoritmes die beter worden door middel van ervaring.
+        Er zijn talloze machine learning algoritmes die allemaal voor bepaalde toepassingen worden gebruikt, van soorten die een programma een omgeving beter leert kennen tot soorten die data probeert te begrijpen en daarmee toekomstige gebeurtenissen voorspellen.</p>
+        <button>Button</button>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/navigation-bar-loader.js"></script>
+    <script src="/slideshow.js"></script>
   </body>
 </html>
