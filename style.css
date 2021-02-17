@@ -40,6 +40,8 @@ a {
   justify-content: right;
   text-align: right;
   color: black;
+  margin: 10vw;
+  height: 100vh;
 }
 .left .text
 {
