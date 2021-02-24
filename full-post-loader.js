@@ -27,5 +27,9 @@ var body = document.getElementById("post-body");
 
 fetch("/posts/" + urlParams.post + ".json")
   .then(response => response.json())
-  .then(data => { title.innerHTML = data.title; body.innerHTML = data.body; subtitle.innerHTML = data.subtitle; })
+  .then(data => {
+    title.innerHTML = data.title;
+    body.innerHTML = data.body;
+    subtitle.innerHTML = data.subtitle;
+    document.title = data.title; })
   .catch(console.error);
