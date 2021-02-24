@@ -28,26 +28,32 @@ a {
   background-image: var(--background);
   background-size: cover;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .left
 {
-  display: flex;
-  align-items: right;
-  justify-content: right;
-  text-align: right;
   color: black;
   margin: 10vw;
   height: 100vh;
+  text-align: left;
 }
 .left .text
 {
-  text-align: left;
   width: 50%;
   float: left;
+}
+.right
+{
+  color: black;
+  margin: 10vw;
+  height: 100vh;
+  text-align: right;
+}
+.right .text
+{
+  width: 50%;
+  float: right;
 }
 
 form label.required:after
