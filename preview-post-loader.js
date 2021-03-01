@@ -1,4 +1,4 @@
-var debug = false;
+var debug = true;
 
 function setValue(url, text) {
   fetch(url)
