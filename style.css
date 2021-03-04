@@ -1,20 +1,19 @@
 body
 {
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
 }
-
 h1
 {
   text-align: center;
 }
 
+/* Navigatie bar. */
 nav
 {
   text-align: center;
 }
-
-a {
+nav a
+{
   text-decoration: none;
   color: black;
   font-size: 5vw;
@@ -22,15 +21,16 @@ a {
   padding-right: 5vw;
 }
 
+/* Segments systeem. */
 .full-screen
 {
   height: 100vh;
+  width: 100vw;
   background-image: var(--background);
   background-size: cover;
   color: white;
   text-align: center;
 }
-
 .left
 {
   color: black;
@@ -56,8 +56,16 @@ a {
   float: right;
 }
 
+/* Formulier (Contact-pagina) */
 form label.required:after
 {
     color: red;
     content: " *";
+}
+
+/* Algemene content block. */
+.content
+{
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
