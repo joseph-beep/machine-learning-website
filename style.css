@@ -3,11 +3,6 @@ body
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
 }
-h1
-{
-  text-align: center;
-  margin: 0;
-}
 
 /* Navigatie bar. */
 nav
@@ -69,6 +64,9 @@ form label.required:after
 /* Algemene content block. */
 .content
 {
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 5vw;
+}
+.content h1
+{
+  text-align: center;
 }
