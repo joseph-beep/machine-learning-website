@@ -12,7 +12,7 @@ function setValue(url, text) {
     })
     .then(data =>
     {
-      text.innerHTML = data.body.replace(/^(.{200}[^\s]*).*/, "$1") + " ...";
+      text.innerHTML = data.body.replace(/<\/?("[^"]*"|'[^']*'|[^>])*(>|$)/g, "").replace(/^(.{200}[^\s]*).*/, "$1") + " ...";
     })
     //.catch (console.error);
     .catch((error) => {
