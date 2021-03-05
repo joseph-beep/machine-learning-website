@@ -1,7 +1,6 @@
 * {box-sizing:border-box}
 
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: 0;
   padding: 0;
