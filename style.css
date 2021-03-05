@@ -3,6 +3,7 @@ body
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   overflow-x: hidden;
+  font-size: 1vw;
 }
 h1
 {
@@ -40,8 +41,10 @@ nav a:hover
 .full-screen
 {
   padding-top: 2vw;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  font-size: 2vw;
 
   height: 100vh;
   width: 100vw;
@@ -50,22 +53,8 @@ nav a:hover
   color: white;
   text-align: center;
 }
-/* .full-screen h1
-{
-  margin-top: 2vw;
-  margin-left: 30vw;
-  margin-right: 30vw;
-}
-.full-screen p
-{
-  margin-top: 2vw;
-  margin-left: 30vw;
-  margin-right: 30vw;
-} */
 .left
 {
-  color: black;
-  margin: 10vw;
   height: 100vh;
   text-align: left;
 }
@@ -76,7 +65,6 @@ nav a:hover
 }
 .right
 {
-  color: black;
   margin: 10vw;
   height: 100vh;
   text-align: right;
@@ -105,7 +93,6 @@ form label.required:after
 
   color: black;
 
-  font-size: 1vw;
   background-color: rgba(255, 255, 255, 0.8);
 
   border: 10px rgba(255, 255, 255, 1) solid;
