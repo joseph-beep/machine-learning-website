@@ -63,6 +63,9 @@ nav a:hover
   width: 50%;
   float: left;
 }
+.left .text h1 {
+  text-align: left;
+}
 .right
 {
   height: 100vh;
