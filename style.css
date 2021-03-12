@@ -81,8 +81,15 @@ nav a:hover
 }
 
 /* Formulier (Contact-pagina) */
-.contact {
-  padding: 5vw;
+.contact fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.contact legend {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 0;
 }
 .contact label.required:after {
   color: red;
