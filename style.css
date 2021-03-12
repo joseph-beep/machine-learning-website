@@ -81,9 +81,15 @@ nav a:hover
 }
 
 /* Formulier (Contact-pagina) */
+.contact {
+  padding: 5vw;
+}
 .contact label.required:after {
   color: red;
   content: " *";
+}
+.contact input {
+  margin-bottom: 20px;
 }
 
 /* Algemene content block. */
@@ -92,6 +98,7 @@ nav a:hover
   margin-top: 2vw;
   margin-left: 30vw;
   margin-right: 30vw;
+  margin-bottom: 2vw;
 
   padding: 2vw;
 
