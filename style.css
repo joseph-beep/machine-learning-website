@@ -81,10 +81,9 @@ nav a:hover
 }
 
 /* Formulier (Contact-pagina) */
-form label.required:after
-{
-    color: red;
-    content: " *";
+.contact label.required:after {
+  color: red;
+  content: " *";
 }
 
 /* Algemene content block. */
