@@ -207,3 +207,9 @@ button:hover
   background-color: rgba(255, 255, 255, 0.8);
   border: 10px white solid;
 }
+
+@media (max-aspect-ratio: 1/1) {
+  .full-screen {
+    font-size: 2vh;
+  }
+}
