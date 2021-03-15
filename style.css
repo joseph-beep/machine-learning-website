@@ -216,13 +216,36 @@ button:hover
 }
 
 #hamburger-button {
+  padding: 1vh;
   display: block;
-  padding: 0;
   background-color: black;
   width: 100%;
   text-align: left;
+  color: white;
+  font-size: 3vh;
+}
+#hamburger-button p {
+  margin: 0;
+  -webkit-user-select: none;   
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
 }
 #hamburger-menu {
+  position: fixed;
+  z-index: 100;
+  width: 0%;
+  height: 100%;
+  display: inherit;
+  opacity: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#hamburger-menu a {
+  font-size: 3vh;
+  margin-top: 5vh;
+  display: block;
 }
 
 @media (max-aspect-ratio: 1/1) {
