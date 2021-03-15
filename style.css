@@ -208,6 +208,23 @@ button:hover
   border: 10px white solid;
 }
 
+.portrait {
+  display: none;
+}
+.landscape {
+  display: inherit;
+}
+
+#hamburger-button {
+  display: block;
+  padding: 0;
+  background-color: black;
+  width: 100%;
+  text-align: left;
+}
+#hamburger-menu {
+}
+
 @media (max-aspect-ratio: 1/1) {
   .full-screen {
     font-size: 2vh;
@@ -227,7 +244,17 @@ button:hover
     font-size: 2vh;
   }
 
+  nav {
+    display: none;
+  }
   nav a {
     font-size: 2vh;
+  }
+
+  .portrait {
+    display: inherit;
+  }
+  .landscape {
+    display: none;
   }
 }
