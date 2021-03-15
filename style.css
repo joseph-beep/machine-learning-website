@@ -212,4 +212,22 @@ button:hover
   .full-screen {
     font-size: 2vh;
   }
+  .left .text
+  {
+    width: 75%;
+    float: left;
+  }
+  .right .text
+  {
+    width: 75%;
+    float: right;
+  }
+
+  button {
+    font-size: 2vh;
+  }
+
+  nav a {
+    font-size: 2vh;
+  }
 }
