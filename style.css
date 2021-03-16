@@ -86,51 +86,47 @@ nav a:hover
   padding: 0;
   margin: 0;
 }
-.contact input {
-  border: 0;
-  padding: 5px;
-}
 .contact textarea {
   border: 0;
-  padding: 5px;
+  padding: 0;
 }
 .contact legend {
-  font-size: 1.5vw;
   font-weight: bold;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 1vw;
 }
 .contact label.required:after {
   color: red;
   content: " *";
 }
 .contact input {
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
+  border: 0;
+  padding: 0.5vw;
+  font-size: 1.5vh;
 }
 .contact button
 {
-  padding: 15px 32px;
+  padding: 0.5vw 1.5vw;
   text-align: center;
   display: inline-block;
 
   text-decoration: none;
-  font-size: 1vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  font-size: 2vh;
   font-weight: bold;
 
   color: white;
   background-color: rgba(0, 0, 0, 0.25);
-  border: 5px rgba(255, 255, 255, 0.5) solid;
+  border: 0.5vh rgba(255, 255, 255, 0.5) solid;
   transition: 0.3s;
 }
 .contact button:hover
 {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 5px white solid;
+  border: 0.5vh white solid;
 }
 
 .left-column {
@@ -308,6 +304,17 @@ button:hover
   nav a:hover
   {
     border: 1vh white solid;
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  .left-column {
+    width: 100%;
+    text-align: center;
+  }
+  .right-column {
+    width: 100%;
+    text-align: center;
   }
 }
 
