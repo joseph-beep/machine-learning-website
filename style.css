@@ -186,7 +186,6 @@ img.background {
 
 button
 {
-  padding: 15px 32px;
   text-align: center;
   display: inline-block;
 
@@ -198,14 +197,14 @@ button
 
   color: white;
   background-color: transparent;
-  border: 10px rgba(255, 255, 255, 0.5) solid;
+  border: 0.5vw rgba(255, 255, 255, 0.5) solid;
   transition: 0.3s;
 }
 button:hover
 {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 10px white solid;
+  border: 0.5vw white solid;
 }
 
 .portrait {
@@ -279,5 +278,28 @@ button:hover
   }
   .landscape {
     display: none;
+  }
+
+  button
+  {
+    text-align: center;
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-weight: bold;
+
+    color: white;
+    background-color: transparent;
+    border: 0.5vh rgba(255, 255, 255, 0.5) solid;
+    transition: 0.3s;
+  }
+  button:hover
+  {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.5vh white solid;
   }
 }
