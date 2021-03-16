@@ -28,13 +28,13 @@ nav a
   font-weight: bold;
 
   color: rgba(255, 255, 255, 0.5);
-  border: 0px rgba(0, 0, 0, 0) solid;
+  border: 0vw rgba(0, 0, 0, 0) solid;
   transition: 0.3s;
 }
 nav a:hover
 {
   color: rgba(255, 255, 255, 1);
-  border: 10px white solid;
+  border: 1vw white solid;
 }
 
 /* Segments systeem. */
@@ -164,7 +164,7 @@ nav a:hover
 
   background-color: rgba(255, 255, 255, 0.8);
 
-  border: 10px rgba(255, 255, 255, 1) solid;
+  border: 1vw rgba(255, 255, 255, 1) solid;
 
   -webkit-box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.5); 
   box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.5);
@@ -174,7 +174,7 @@ img.background {
   z-index: -2;
 
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 100%;
 
   width: 100%;
   height: auto;
@@ -182,6 +182,8 @@ img.background {
   position: fixed;
   top: 0;
   left: 0;
+
+  object-fit: cover;
 }
 
 button
@@ -215,7 +217,7 @@ button:hover
 }
 
 #hamburger-button {
-  padding: 1vh;
+  padding: 0.375vh;
   display: block;
   background-color: black;
   width: 100%;
@@ -301,5 +303,23 @@ button:hover
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
     border: 0.5vh white solid;
+  }
+
+  nav a:hover
+  {
+    border: 1vh white solid;
+  }
+}
+
+@media (max-aspect-ratio: 3/2) {
+  body {
+    font-size: 2vh;
+  }
+
+  .content {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
   }
 }
