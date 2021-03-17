@@ -245,6 +245,22 @@ button:hover
   display: block;
 }
 
+.did-you-know {
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  padding: 1vw;
+}
+.did-you-know h1 {
+  margin: 0;
+}
+.did-you-know p {
+  margin: 0;
+}
+
 @media (max-aspect-ratio: 1/1) {
   .full-screen {
     font-size: 2vh;
