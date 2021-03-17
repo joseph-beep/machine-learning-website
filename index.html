@@ -13,7 +13,7 @@
   <body>
     <div id="navigation-bar"></div>
     <div class="slideshow-container">
-      <div class="slide fade full-screen left" style="--background: url('https://miro.medium.com/max/3000/1*n3TBO5i8hrYAujlhiHoE_w.gif'); background-position: right top;">
+      <div class="slide fade full-screen left" style="--background: url('https://miro.medium.com/max/3000/1*n3TBO5i8hrYAujlhiHoE_w.gif'); background-position: center top;">
         <div class="text">
           <h1>Wat is machine learning?</h1>
           <p class="post-preview" post="homepage"></p>
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="slide fade full-screen right" style="--background: url('https://cdn.vox-cdn.com/thumbor/78njqASOA1wpHzCyFYvEmk6AGWY=/0x0:2040x1360/1200x675/filters:focal(857x517:1183x843):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/60255559/acastro_180628_2697_0001.0.gif'); background-position: right bottom;">
+      <div class="slide fade full-screen right" style="--background: url('https://cdn.vox-cdn.com/thumbor/78njqASOA1wpHzCyFYvEmk6AGWY=/0x0:2040x1360/1200x675/filters:focal(857x517:1183x843):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/60255559/acastro_180628_2697_0001.0.gif'); background-position: center bottom;">
         <div class="text">
           <h1>Zelfrijdende auto's: Waar is het nu gebleven?</h1>
           <p class="post-preview" post="Zelfrijdendeauto's"></p>
@@ -57,23 +57,29 @@
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="full-screen left" style="--background: url('https://pbs.twimg.com/media/DNS5sxCWAAEcHQk.jpg')">
+    <div class="full-screen right" style="--background: url('https://encyclopedia.ushmm.org/images/large/c59313df-14bf-4137-959a-997d79b1467d.jpg'); background-position: center;">
       <div class="text">
-        <h1>Wat is machine learning?</h1>
-        <p class="post-preview" post="homepage"></p>
-        <button>Button</button>
+        <h1>Google translate: machine learning in actie</h1>
+        <p class="post-preview" post="googletranslate"></p>
+        <button onclick="location.href='/post.html?post=homepage'">Ik wil meer over Google Translate leren!</button>
+        <div class="did-you-know" style="top: 160%; left: 13%; background-color: #807c52; text-align: left;">
+          <h1 style="text-align: left;">Wist je dat?</h1>
+          <p>Ingenieurs in Tesla werken aan zelfrijdende auto’s met machine learning.<br/>
+              Programmeurs in Apple werken aan gezichtsherkenning technologie met machine learning.<br/>
+              Zelfs aandelen worden verhandeld door bots getraind met machine learning.</p>
+        </div>
       </div>
     </div>
 
-    <div class="full-screen right" style="--background: url('https://pbs.twimg.com/media/DNS5sxCWAAEcHQk.jpg')">
+    <div class="full-screen left" style="--background: url('https://cdn.vox-cdn.com/thumbor/78njqASOA1wpHzCyFYvEmk6AGWY=/0x0:2040x1360/1200x675/filters:focal(857x517:1183x843):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/60255559/acastro_180628_2697_0001.0.gif'); background-position: right bottom;">
       <div class="text">
-        <h1>Test-post</h1>
-        <p class="post-preview" post="test-post"></p>
-        <button>Button</button>
+        <h1>Zelfrijdende auto's: Waar is het nu gebleven?</h1>
+        <p class="post-preview" post="Zelfrijdendeauto's"></p>
+        <button onclick="location.href='/post.html?post=homepage'">Lees over Tesla en de toekomst</button>
       </div>
     </div>
 
-    <div class="did-you-know" style="top: 100%; right: 2%; background-color: #46bd66;">
+    <!-- <div class="did-you-know" style="top: 100%; right: 2%; background-color: #46bd66;">
       <h1>Wist je dat?</h1>
       <p>Ingenieurs in Tesla werken aan zelfrijdende auto’s met machine learning.<br/>
           Programmeurs in Apple werken aan gezichtsherkenning technologie met machine learning.<br/>
@@ -85,7 +91,7 @@
       <p>Ingenieurs in Tesla werken aan zelfrijdende auto’s met machine learning.<br/>
           Programmeurs in Apple werken aan gezichtsherkenning technologie met machine learning.<br/>
           Zelfs aandelen worden verhandeld door bots getraind met machine learning.</p>
-    </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/navigation-bar-loader.js"></script>
