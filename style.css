@@ -53,6 +53,11 @@ nav a:hover
   color: white;
   text-align: center;
 }
+.text {
+  padding: 1vw;
+  border-radius: 1vw;
+  border: 1vh solid white;
+}
 .left
 {
   height: 100vh;
@@ -270,6 +275,10 @@ button:hover
 @media (max-aspect-ratio: 1/1) {
   .full-screen {
     font-size: 2vh;
+
+    padding-top: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
   .left .text
   {
