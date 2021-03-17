@@ -203,6 +203,8 @@ button
   background-color: transparent;
   border: 0.5vw rgba(255, 255, 255, 0.5) solid;
   transition: 0.3s;
+
+  font-family: 'Roboto Condensed', sans-serif;
 }
 button:hover
 {
