@@ -24,6 +24,7 @@ var urlParams = parseURLParams(urlString);
 var title = document.getElementById("post-title");
 var subtitle = document.getElementById("post-subtitle");
 var body = document.getElementById("post-body");
+var background = document.getElementById("post-background")
 
 fetch("/posts/" + urlParams.post + ".json")
   .then(response => response.json())
@@ -31,5 +32,6 @@ fetch("/posts/" + urlParams.post + ".json")
     title.innerHTML = data.title;
     body.innerHTML = data.body;
     subtitle.innerHTML = data.subtitle;
-    document.title = data.title; })
+    document.title = data.title;
+    background.setAttribute("src", data.background) })
   .catch(console.error);
