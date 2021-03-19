@@ -1,371 +1,335 @@
-* {box-sizing:border-box}
-body
-{
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-  font-size: 1vw;
+* {
+	box-sizing: border-box
 }
-h1
-{
-  text-align: center;
-  margin-top: 0;
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	font-size: 1vw;
+}
+h1 {
+	text-align: center;
+	margin-top: 0;
 }
 
 /* Navigatie bar. */
-nav
-{
-  text-align: center;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  background-color: black;
+nav {
+	text-align: center;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	background-color: black;
 }
-nav a
-{
-  text-decoration: none;
-  font-size: 2vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-weight: bold;
+nav a {
+	text-decoration: none;
+	font-size: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.5);
+	border: 0vw rgba(0, 0, 0, 0) solid;
+	transition: 0.3s;
+}
+nav a:hover {
+	color: rgba(255, 255, 255, 1);
+	border: 1vw white solid;
+}
 
-  color: rgba(255, 255, 255, 0.5);
-  border: 0vw rgba(0, 0, 0, 0) solid;
-  transition: 0.3s;
-}
-nav a:hover
-{
-  color: rgba(255, 255, 255, 1);
-  border: 1vw white solid;
-}
 
 /* Segments systeem. */
-.full-screen
-{
-  padding-top: 2vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-
-  font-size: 2vw;
-
-  height: 100vh;
-  width: 100vw;
-  background-image: var(--background);
-  background-size: cover;
-  color: white;
-  text-align: center;
+.full-screen {
+	padding-top: 2vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	font-size: 2vw;
+	height: 100vh;
+	width: 100vw;
+	background-image: var(--background);
+	background-size: cover;
+	color: white;
+	text-align: center;
 }
+
 .text {
-  padding: 1vw;
-  border-radius: 1vw;
-  border: 1vh solid white;
-  background-color: rgba(0, 0, 0, 0.75)
+	padding: 1vw;
+	border-radius: 1vw;
+	border: 1vh solid white;
+	background-color: rgba(0, 0, 0, 0.75)
 }
-.left
-{
-  height: 100vh;
-  text-align: left;
+.left {
+	height: 100vh;
+	text-align: left;
 }
-.left .text
-{
-  width: 50%;
-  float: left;
+.left .text {
+	width: 50%;
+	float: left;
 }
 .left .text h1 {
-  text-align: left;
+	text-align: left;
 }
-.right
-{
-  height: 100vh;
-  text-align: right;
+.right {
+	height: 100vh;
+	text-align: right;
 }
-.right .text
-{
-  width: 50%;
-  float: right;
+.right .text {
+	width: 50%;
+	float: right;
 }
 .right .text h1 {
-  text-align: right;
+	text-align: right;
 }
 
 /* Formulier (Contact-pagina) */
 .contact fieldset {
-  border: 0;
-  padding: 0;
-  margin: 0;
+	border: 0;
+	padding: 0;
+	margin: 0;
 }
 .contact textarea {
-  border: 0;
-  padding: 0;
+	border: 0;
+	padding: 0;
 }
 .contact legend {
-  font-weight: bold;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 1vw;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 1vw;
 }
 .contact label.required:after {
-  color: red;
-  content: " *";
+	color: red;
+	content: " *";
 }
 .contact input {
-  margin-bottom: 1vw;
-  border: 0;
-  padding: 0.5vw;
-  font-size: 1.5vh;
+	margin-bottom: 1vw;
+	border: 0;
+	padding: 0.5vw;
+	font-size: 1.5vh;
 }
-.contact button
-{
-  padding: 0.5vw 1.5vw;
-  text-align: center;
-  display: inline-block;
-
-  text-decoration: none;
-  font-size: 2vh;
-  font-weight: bold;
-
-  color: white;
-  background-color: rgba(0, 0, 0, 0.25);
-  border: 0.5vh rgba(255, 255, 255, 0.5) solid;
-  transition: 0.3s;
+.contact button {
+	padding: 0.5vw 1.5vw;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 2vh;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.25);
+	border: 0.5vh rgba(255, 255, 255, 0.5) solid;
+	transition: 0.3s;
 }
-.contact button:hover
-{
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0.5vh white solid;
+.contact button:hover {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0.5vh white solid;
 }
 
 .left-column {
-  width: 50%;
-  float: left;
+	width: 50%;
+	float: left;
 }
 .right-column {
-  width: 50%;
-  float: right;
-  text-align: left;
+	width: 50%;
+	float: right;
+	text-align: left;
 }
 .center-column {
-  width: 100%;
-  text-align: center;
+	width: 100%;
+	text-align: center;
 }
 .center-column textarea {
-  width: 100%;
+	width: 100%;
 }
 
 /* Algemene content block. */
-.content
-{
-  margin-top: 2vw;
-  margin-left: 30vw;
-  margin-right: 30vw;
-  margin-bottom: 2vw;
-
-  padding: 2vw;
-
-  color: black;
-
-  background-color: rgba(255, 255, 255, 0.8);
-
-  border: 1vw rgba(255, 255, 255, 1) solid;
-
-  -webkit-box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.5); 
-  box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.5);
+.content {
+	margin-top: 2vw;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	margin-bottom: 2vw;
+	padding: 2vw;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1vw rgba(255, 255, 255, 1) solid;
+	-webkit-box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.5);
 }
 
 img.background {
-  z-index: -2;
-
-  min-height: 100%;
-  min-width: 100%;
-
-  width: 100%;
-  height: auto;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  object-fit: cover;
+	z-index: -2;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	object-fit: cover;
 }
 
-button
-{
-  text-align: center;
-  display: inline-block;
-
-  text-decoration: none;
-  font-size: 2vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-weight: bold;
-
-  color: white;
-  background-color: transparent;
-  border: 0.5vw rgba(255, 255, 255, 0.5) solid;
-  transition: 0.3s;
-
-  font-family: 'Roboto Condensed', sans-serif;
+button {
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	font-weight: bold;
+	color: white;
+	background-color: transparent;
+	border: 0.5vw rgba(255, 255, 255, 0.5) solid;
+	transition: 0.3s;
+	font-family: 'Roboto Condensed', sans-serif;
 }
-button:hover
-{
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0.5vw white solid;
+button:hover {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0.5vw white solid;
 }
 
 .portrait {
-  display: none;
+	display: none;
 }
 .landscape {
-  display: inherit;
+	display: inherit;
 }
 
 #hamburger-button {
-  padding: 0.375vh;
-  display: block;
-  background-color: black;
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 3vh;
+	padding: 0.375vh;
+	display: block;
+	background-color: black;
+	width: 100%;
+	text-align: left;
+	color: white;
+	font-size: 3vh;
 }
 #hamburger-button p {
-  margin: 0;
-  -webkit-user-select: none;   
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: block;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: block;
 }
 #hamburger-menu {
-  position: fixed;
-  z-index: 100;
-  width: 0%;
-  height: 100%;
-  display: inherit;
-  opacity: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
+	position: fixed;
+	z-index: 100;
+	width: 0%;
+	height: 100%;
+	display: inherit;
+	opacity: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
 }
 #hamburger-menu a {
-  font-size: 3vh;
-  margin-top: 5vh;
-  display: block;
+	font-size: 3vh;
+	margin-top: 5vh;
+	display: block;
 }
 
 .did-you-know {
-  background-color: black;
-  color: white;
-  position: absolute;
-  z-index: 999;
-  width: auto;
-  height: auto;
-  max-width: 25vw;
-  padding: 1vw;
-  border-radius: 2vw;
-  font-size: 1.5vw;
-
-  -webkit-box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.5); 
-  box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.5);
+	background-color: black;
+	color: white;
+	position: absolute;
+	z-index: 999;
+	width: auto;
+	height: auto;
+	max-width: 25vw;
+	padding: 1vw;
+	border-radius: 2vw;
+	font-size: 1.5vw;
+	-webkit-box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.5);
 }
 .did-you-know h1 {
-  margin: 0;
+	margin: 0;
 }
 .did-you-know p {
-  margin: 0;
+	margin: 0;
 }
 
 @media (max-aspect-ratio: 1/1) {
-  .full-screen {
-    font-size: 2vh;
+	.full-screen {
+		font-size: 2vh;
+		padding-top: 2vh;
+		padding-left: 5vh;
+		padding-right: 5vh;
+	}
 
-    padding-top: 2vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-  }
-  .left .text
-  {
-    width: 75%;
-    float: left;
-  }
-  .right .text
-  {
-    width: 75%;
-    float: right;
-  }
+	.left .text {
+		width: 75%;
+		float: left;
+	}
+	.right .text {
+		width: 75%;
+		float: right;
+	}
 
-  button {
-    font-size: 2vh;
-  }
+	button {
+		font-size: 2vh;
+	}
 
-  nav {
-    display: none;
-  }
-  nav a {
-    font-size: 2vh;
-  }
+	nav {
+		display: none;
+	}
+	nav a {
+		font-size: 2vh;
+	}
 
-  .portrait {
-    display: inherit;
-  }
-  .landscape {
-    display: none;
-  }
+	.portrait {
+		display: inherit;
+	}
+	.landscape {
+		display: none;
+	}
 
-  button
-  {
-    text-align: center;
-    display: inline-block;
+	button {
+		text-align: center;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 2vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		font-weight: bold;
+		color: white;
+		background-color: transparent;
+		border: 0.5vh rgba(255, 255, 255, 0.5) solid;
+		transition: 0.3s;
+	}
+	button:hover {
+		color: black;
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 0.5vh white solid;
+	}
 
-    text-decoration: none;
-    font-size: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    font-weight: bold;
+	nav a:hover {
+		border: 1vh white solid;
+	}
 
-    color: white;
-    background-color: transparent;
-    border: 0.5vh rgba(255, 255, 255, 0.5) solid;
-    transition: 0.3s;
-  }
-  button:hover
-  {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 0.5vh white solid;
-  }
-
-  nav a:hover
-  {
-    border: 1vh white solid;
-  }
-
-  .did-you-know {
-    display: none;
-  }
+	.did-you-know {
+		display: none;
+	}
 }
 
 @media (max-aspect-ratio: 4/3) {
-  .left-column {
-    width: 100%;
-    text-align: center;
-  }
-  .right-column {
-    width: 100%;
-    text-align: center;
-  }
+	.left-column {
+		width: 100%;
+		text-align: center;
+	}
+	.right-column {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 @media (max-aspect-ratio: 3/2) {
-  body {
-    font-size: 2vh;
-  }
-
-  .content {
-    margin-top: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    margin-bottom: 2vw;
-  }
+	body {
+		font-size: 2vh;
+	}
+  
+	.content {
+		margin-top: 2vw;
+		margin-left: 2vw;
+		margin-right: 2vw;
+		margin-bottom: 2vw;
+	}
 }
