@@ -28,6 +28,11 @@ ol
  margin-left: 125px;
  margin-right: 125px; 
 }
+.image {
+  text-align: left;
+  width: 600px;
+  height: 350px;
+}
 
 
   
