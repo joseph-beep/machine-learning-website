@@ -33,6 +33,16 @@ ol
   width: 600px;
   height: 350px;
 }
+.olo{
+  text-align: center;
+  width: 600px;
+  height: 350px;
+}
+.olo ol {
+ text-align: center;
+ margin-left: 0px;
+ margin-right: 50px; 
+}
 
 
   
