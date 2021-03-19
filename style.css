@@ -11,6 +11,11 @@ h1 {
 	text-align: center;
 	margin-top: 0;
 }
+h2 {
+  font-size: 2vw;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
 /* Navigatie bar. */
 nav {
@@ -33,7 +38,6 @@ nav a:hover {
 	color: rgba(255, 255, 255, 1);
 	border: 1vw white solid;
 }
-
 
 /* Segments systeem. */
 .full-screen {
@@ -308,6 +312,10 @@ button:hover {
 	.did-you-know {
 		display: none;
 	}
+
+  h2 {
+    font-size: 2vh;
+  } 
 }
 
 @media (max-aspect-ratio: 4/3) {
